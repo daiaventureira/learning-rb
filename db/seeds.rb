@@ -39,7 +39,7 @@ Product.create!(title: 'Build Chatbot Interactions',
       skills for communicating, information, and fun.
       </p>},
   image_url:'dpchat.jpg',
-  price: 20.00)
+  price: 25.00)
 # . . .
 
 Product.create!(title: 'Programming Crystal',

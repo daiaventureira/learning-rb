@@ -1,0 +1,20 @@
+def r(n):
+	if n == 1:
+		return ['()']
+	
+	xs = r(n - 1)
+	rs = []
+
+	for x in xs:
+		rs.append(x + '()')
+		rs.append('()' + x)
+		rs.append('(' + x + ')')
+
+	return sorted(list(set(rs)))
+
+print(r(1))
+print(r(2))
+print(r(3))
+print(r(4))
+print(r(5))
+
